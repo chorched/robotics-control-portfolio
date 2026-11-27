@@ -1,0 +1,195 @@
+{
+ "_about": "Results of the SmolVLA / LIBERO-Object study. Every entry names the run (batch id) that produced it; 24 episodes per cell = 3 tasks x 8 initial states unless noted. Produced by the original research scripts; see README.",
+ "setup": {
+  "policy": "SmolVLA (HuggingFaceVLA/smolvla_libero @ 6721902)",
+  "stack": "LeRobot v0.4.4, LIBERO 8f1084e, MuJoCo 3.3.7, torch 2.8.0+cu128",
+  "control_period_s": 0.05,
+  "tasks": "LIBERO-Object 0-2",
+  "max_control_steps": 280
+ },
+ "baseline_C1t": {
+  "latency_ms_median": 388.6,
+  "latency_ms_p99": 440.7,
+  "paused_success": "4/7",
+  "sync_per_action_deadline_miss": 0.878,
+  "sync_per_action_success": "0/10",
+  "source": "C1t"
+ },
+ "drop_rule_C4t": {
+  "note": "CPU shared with another batch: wall latency ~848 ms, but the simulator slowed too; ~8.1 control steps elapsed per query.",
+  "cells": [
+   {
+    "label": "sync, replan every 8",
+    "k": 0,
+    "n": 24,
+    "latency_ms_median": 597.0,
+    "deadline_miss": 0.602
+   },
+   {
+    "label": "async, nominal drop",
+    "k": 0,
+    "n": 24,
+    "latency_ms_median": 848.2,
+    "deadline_miss": 0.053,
+    "drop_minus_elapsed": 9.688,
+    "steps_elapsed_per_query": 8.11,
+    "nominal_drop": 17.8
+   },
+   {
+    "label": "async, elapsed drop",
+    "k": 15,
+    "n": 24,
+    "latency_ms_median": 847.6,
+    "deadline_miss": 0.064,
+    "drop_minus_elapsed": 0.0,
+    "steps_elapsed_per_query": 8.07,
+    "nominal_drop": 8.07
+   }
+  ],
+  "H4": {
+   "diff": 0.625,
+   "newcombe95": [
+    0.3837,
+    0.7884
+   ],
+   "pass": true
+  },
+  "source": "C4t"
+ },
+ "dose_response_C5t": {
+  "inject_ms": [
+   0,
+   150,
+   300
+  ],
+  "sync_k": [
+   14,
+   4,
+   0
+  ],
+  "async_elapsed_k": [
+   10,
+   10,
+   0
+  ],
+  "n": 24,
+  "sync_held_per_query": [
+   7.28,
+   10.17,
+   13.86
+  ],
+  "async_held_per_query": [
+   0.23,
+   1.41,
+   3.79
+  ],
+  "H8_sync_drops_with_delay": {
+   "pass": true,
+   "diff": 0.5833,
+   "newcombe95_lower": 0.3444
+  },
+  "H7_async_beats_sync_at_300": {
+   "pass": false
+  },
+  "source": "C5t"
+ },
+ "chunk_budget_C7t": {
+  "inject_ms": 300,
+  "steps_elapsed_per_query": 11.7,
+  "cells": [
+   {
+    "Lc": 8,
+    "k": 1,
+    "n": 24,
+    "held_per_query": 3.92,
+    "deadline_miss": 0.341
+   },
+   {
+    "Lc": 14,
+    "k": 10,
+    "n": 24,
+    "held_per_query": 0.67,
+    "deadline_miss": 0.051
+   }
+  ],
+  "H12": {
+   "diff": 0.375,
+   "newcombe95": [
+    0.1396,
+    0.573
+   ],
+   "pass": true
+  },
+  "source": "C7t"
+ },
+ "denoise_sweep_V19C3": {
+  "sync_replan8": {
+   "num_steps": [
+    1,
+    2,
+    3,
+    5,
+    10
+   ],
+   "k": [
+    24,
+    22,
+    22,
+    19,
+    15
+   ],
+   "E_median": [
+    3,
+    3,
+    4,
+    6,
+    9
+   ],
+   "spearman_success_vs_E": -0.92,
+   "source": "V19C3 (S1,S2,S5), V19C1b (S3,S10)"
+  },
+  "paused": {
+   "num_steps": [
+    1,
+    2,
+    3,
+    10
+   ],
+   "k": [
+    17,
+    22,
+    24,
+    21
+   ],
+   "latency_ms_median": [
+    108,
+    134,
+    165,
+    440
+   ],
+   "source": "V19C3, V19C1b"
+  },
+  "n": 24
+ },
+ "heldout_V19C4": {
+  "tasks": "LIBERO-Object 3-9 (never used before in this study)",
+  "pairs": 56,
+  "steps3_k": 51,
+  "steps10_k": 17,
+  "diff": 0.6071,
+  "newcombe95": [
+   0.4412,
+   0.7233
+  ],
+  "mcnemar": {
+   "only3": 36,
+   "only10": 2,
+   "p_exact": 5.4e-09
+  },
+  "latency_ms_median": {
+   "steps3": 195,
+   "steps10": 454
+  },
+  "source": "V19C4"
+ }
+}
