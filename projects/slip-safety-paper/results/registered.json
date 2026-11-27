@@ -1,0 +1,123 @@
+{
+ "_about": "Numbers from the pre-registered simulation study (runs S4, S4b, S4c). T1 = MuJoCo Panda pick-lift-transport; mass jump x2 mid-transport; 720 episodes per (eta, configuration).",
+ "configs": {
+  "C0": "no safety layer",
+  "C1": "reflex squeeze on slip",
+  "C2": "per-step friction-cone CBF",
+  "C3": "chunk preview, fixed worst-case blind steps",
+  "C4": "chunk preview, latency-aware blind steps m (proposed)",
+  "Cor": "open-loop conservative reference: slow from the start, full grip"
+ },
+ "S4c_T1_drop_vs_eta": {
+  "eta": [
+   0.6,
+   0.7,
+   0.8,
+   0.85,
+   0.9,
+   0.95,
+   0.98
+  ],
+  "C0": [
+   0.925,
+   0.911,
+   0.942,
+   0.943,
+   0.963,
+   0.985,
+   0.997
+  ],
+  "C1": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0.382,
+   0.868
+  ],
+  "C2": [
+   0,
+   0,
+   0,
+   0,
+   0.003,
+   0.271,
+   0.968
+  ],
+  "C3": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0.019,
+   0.663
+  ],
+  "C4": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0.032,
+   0.725
+  ],
+  "Cor": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0.039,
+   0.822
+  ],
+  "n": 720
+ },
+ "S4c_H1c": {
+  "window": "eta 0.85-0.95, 2160 pairs",
+  "C2": 197,
+  "C4": 23,
+  "D_cs": [
+   0.057,
+   0.103
+  ],
+  "pass": true
+ },
+ "S4c_H2c": {
+  "X_cs": [
+   0.058,
+   0.098
+  ],
+  "pass": true
+ },
+ "S4_H1": {
+  "C2": 32,
+  "C4": 24,
+  "reduction": 0.25,
+  "required": 0.5,
+  "pass": false
+ },
+ "S4b_H1b": {
+  "C2": 0,
+  "C4": 0,
+  "pass": false,
+  "note": "rate-limited gripper 10 N/s; recoverable cells, both zero drops"
+ },
+ "S4_H2": {
+  "pass": true,
+  "note": "latency-aware preview (C4) faster than fixed worst-case preview (C3) at equal drop rate; reproduced in S4b and S4c (C4 faster in 95.5% of pairs in S4c)"
+ },
+ "S4_H3": {
+  "coverage_on_shift": 0.913,
+  "pass": false
+ },
+ "S4_E1": {
+  "fewer_requests_vs_fixed_trigger": 0.39
+ },
+ "episodes": {
+  "S4c_T1": 30240,
+  "S4c_T1b": 30240,
+  "S4b": 51840
+ }
+}
