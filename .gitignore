@@ -2,8 +2,10 @@ __pycache__/
 *.pyc
 .venv/
 .ipynb_checkpoints/
+.pytest_cache/
+# trained models and raw runs stay out of the repo
 *.ckpt
 *.pt
-*.npz
+*.zip
 runs/
-data/
+models/
