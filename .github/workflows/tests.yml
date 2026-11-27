@@ -1,0 +1,24 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        project: [vla-realtime, servo-compliance, policy-evaluation, residual-rl, toa-ekf-localization]
+    defaults:
+      run:
+        working-directory: projects/${{ matrix.project }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install numpy matplotlib pytest
+      # simulator-dependent tests skip themselves when MuJoCo / gymnasium-robotics are absent
+      - run: python -m pytest -q tests
