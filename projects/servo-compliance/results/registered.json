@@ -1,0 +1,160 @@
+{
+ "_about": "Registered numbers behind the figures, copied from the original runs (batch ids in 'source').",
+ "calibration_Bc1bt": {
+  "nrmse_arm": {
+   "train": {
+    "fitted": 0.0611,
+    "publicNew": 0.1059,
+    "publicOld": 0.2751
+   },
+   "validation": {
+    "fitted": 0.0607,
+    "publicNew": 0.1236,
+    "publicOld": 0.2358
+   },
+   "test": {
+    "fitted": 0.0847,
+    "publicNew": 0.1643,
+    "publicOld": 0.2571
+   }
+  },
+  "params": {
+   "fitted": {
+    "kp": 14.089,
+    "kv": 0.4701,
+    "frictionloss": 0.2844
+   },
+   "publicNew": {
+    "kp": 998.22,
+    "kv": 2.731,
+    "frictionloss": 0.052
+   },
+   "publicOld": {
+    "kp": 17.8,
+    "kv": 0.0,
+    "frictionloss": 0.052
+   }
+  },
+  "note": "publicOld is handicapped by a 90 deg zero-convention shift on two joints; with corrected offsets its test NRMSE is 0.1286",
+  "source": "Bc1bt"
+ },
+ "stability_Bc2t": {
+  "k_e": 300,
+  "k_eff": 246.6,
+  "seeds": 5,
+  "d1": {
+   "g": [
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    1.0,
+    1.2
+   ],
+   "stable": [
+    5,
+    4,
+    5,
+    4,
+    1,
+    0
+   ]
+  },
+  "d0": {
+   "g": [
+    1.4,
+    1.6,
+    1.8,
+    2.0,
+    2.2,
+    2.5
+   ],
+   "stable": [
+    4,
+    2,
+    3,
+    0,
+    1,
+    0
+   ]
+  },
+  "source": "Bc2t"
+ },
+ "keff_Bc2t": {
+  "k_e": [
+   300,
+   2000,
+   10000
+  ],
+  "k_eff": [
+   246.6,
+   563.5,
+   683.4
+  ],
+  "arm_vertical_stiffness": 677
+ },
+ "bound_Bc2t": {
+  "evaluable": 16,
+  "holds": 16,
+  "violated": 0,
+  "notEvaluable": 2,
+  "best_ssErr_N": 0.022
+ },
+ "minimalist_Bc2mt": {
+  "force_corr": 0.9,
+  "mae_N": 1.12,
+  "idle_bias_N": 1.1
+ },
+ "neuralactuator_B1t": {
+  "force_mae_N": 0.0855,
+  "project_page_mae_N": 0.12,
+  "step_ms_median": 1.98
+ },
+ "load_detection_B6t": {
+  "directions": [
+   "OMX go-up→pick-place",
+   "OMX pick-place→go-up",
+   "SO-101 go-up→pick-place",
+   "SO-101 pick-place→go-up"
+  ],
+  "auroc_b4": [
+   1.0,
+   0.976,
+   0.848,
+   0.993
+  ],
+  "auroc_b1": [
+   0.57,
+   1.0,
+   0.515,
+   0.743
+  ],
+  "auroc_b3_neuralactuator": [
+   null,
+   0.69,
+   null,
+   null
+  ],
+  "frr_source_threshold_b4": [
+   0.975,
+   1.0,
+   0.875,
+   0.75
+  ],
+  "source": "B6t (b4 AUROC = mean of per-seed AUROCs)"
+ },
+ "recalibration_B7t": {
+  "best_pJoint_k_le_4": [
+   1.0,
+   0.47,
+   0.009,
+   0.981
+  ],
+  "gate": "FAIL (2/4, needed 3/4)",
+  "source": "B7t"
+ },
+ "zero_label_V19B1": {
+  "result": "H-B19a failed 0/4 directions",
+  "note": "k=6 unloaded target trajectories: 3/4 directions zero misses, ~14% false alarms"
+ }
+}

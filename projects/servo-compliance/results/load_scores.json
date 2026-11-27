@@ -1,0 +1,1929 @@
+{
+"_about": "Per-trajectory payload scores on the TARGET task of each leave-task-out direction (run B6t). b1 = physics residual baseline, b4 = 1D-CNN (seed-mean probability), b3 = NeuralActuator force head (public checkpoint, OMX pick_place->go_up only). sourceThresholds = 5% false-rejection quantile of the source-task positives.",
+"data": "NeuralActuator dataset (NAD); OMX = OpenManipulator-X 'weight' category, so101 = SO-101",
+"sourceThresholds": {
+"omx": {
+"goUpToPickPlace": {
+"b1": 181.41893382295353,
+"b4": 0.9990564584732056
+},
+"pickPlaceToGoUp": {
+"b1": 326.594708577998,
+"b4": 0.9955245653788248,
+"b3": -0.2639849692066632
+}
+},
+"so101": {
+"goUpToPickPlace": {
+"b1": 24.58441811915782,
+"b4": 0.9988018075625101
+},
+"pickPlaceToGoUp": {
+"b1": 20.907920039047873,
+"b4": 0.9982136487960815
+}
+}
+},
+"trajectories": [
+{
+"platform": "omx",
+"direction": "goUpToPickPlace",
+"task": "pick_place_no_force",
+"split": "test",
+"payloadG": 0,
+"b1": 2770.864835737218,
+"b4": 0.7569374640782675,
+"b3": null
+},
+{
+"platform": "omx",
+"direction": "goUpToPickPlace",
+"task": "pick_place_no_force",
+"split": "train",
+"payloadG": 0,
+"b1": 1809.459398342686,
+"b4": 0.4738062024116516,
+"b3": null
+},
+{
+"platform": "omx",
+"direction": "goUpToPickPlace",
+"task": "pick_place_no_force",
+"split": "train",
+"payloadG": 0,
+"b1": 2615.8267431855566,
+"b4": 0.6396018465360006,
+"b3": null
+},
+{
+"platform": "omx",
+"direction": "goUpToPickPlace",
+"task": "pick_place_no_force",
+"split": "train",
+"payloadG": 0,
+"b1": 3055.0772280619844,
+"b4": 0.7838736772537231,
+"b3": null
+},
+{
+"platform": "omx",
+"direction": "goUpToPickPlace",
+"task": "pick_place_no_force",
+"split": "train",
+"payloadG": 0,
+"b1": 2054.256618414361,
+"b4": 0.5430594484011332,
+"b3": null
+},
+{
+"platform": "omx",
+"direction": "goUpToPickPlace",
+"task": "pick_place_no_force",
+"split": "train",
+"payloadG": 0,
+"b1": 2798.2724692259603,
+"b4": 0.792824923992157,
+"b3": null
+},
+{
+"platform": "omx",
+"direction": "goUpToPickPlace",
+"task": "pick_place_no_force",
+"split": "train",
+"payloadG": 0,
+"b1": 2286.311110322529,
+"b4": 0.7745492458343506,
+"b3": null
+},
+{
+"platform": "omx",
+"direction": "goUpToPickPlace",
+"task": "pick_place_no_force",
+"split": "train",
+"payloadG": 0,
+"b1": 3002.146896253134,
+"b4": 0.7772698998451233,
+"b3": null
+},
+{
+"platform": "omx",
+"direction": "goUpToPickPlace",
+"task": "pick_place_no_force",
+"split": "train",
+"payloadG": 0,
+"b1": 4233.614621665717,
+"b4": 0.8165859580039978,
+"b3": null
+},
+{
+"platform": "omx",
+"direction": "goUpToPickPlace",
+"task": "pick_place_no_force",
+"split": "validation",
+"payloadG": 0,
+"b1": 2686.425505923042,
+"b4": 0.8010175029436747,
+"b3": null
+},
+{
+"platform": "omx",
+"direction": "goUpToPickPlace",
+"task": "pick_place_object_200g",
+"split": "test",
+"payloadG": 200,
+"b1": 658.6124362901155,
+"b4": 0.9586070974667867,
+"b3": null
+},
+{
+"platform": "omx",
+"direction": "goUpToPickPlace",
+"task": "pick_place_object_200g",
+"split": "train",
+"payloadG": 200,
+"b1": 850.287686924949,
+"b4": 0.9273072282473246,
+"b3": null
+},
+{
+"platform": "omx",
+"direction": "goUpToPickPlace",
+"task": "pick_place_object_200g",
+"split": "train",
+"payloadG": 200,
+"b1": 2152.735759827505,
+"b4": 0.95143061876297,
+"b3": null
+},
+{
+"platform": "omx",
+"direction": "goUpToPickPlace",
+"task": "pick_place_object_200g",
+"split": "train",
+"payloadG": 200,
+"b1": 4444.308287588789,
+"b4": 0.9458507895469666,
+"b3": null
+},
+{
+"platform": "omx",
+"direction": "goUpToPickPlace",
+"task": "pick_place_object_200g",
+"split": "train",
+"payloadG": 200,
+"b1": 2390.7506544433445,
+"b4": 0.9617816805839539,
+"b3": null
+},
+{
+"platform": "omx",
+"direction": "goUpToPickPlace",
+"task": "pick_place_object_200g",
+"split": "train",
+"payloadG": 200,
+"b1": 3494.358417453079,
+"b4": 0.9665302832921346,
+"b3": null
+},
+{
+"platform": "omx",
+"direction": "goUpToPickPlace",
+"task": "pick_place_object_200g",
+"split": "train",
+"payloadG": 200,
+"b1": 3259.492853678827,
+"b4": 0.9568853378295898,
+"b3": null
+},
+{
+"platform": "omx",
+"direction": "goUpToPickPlace",
+"task": "pick_place_object_200g",
+"split": "train",
+"payloadG": 200,
+"b1": 2582.9632830038836,
+"b4": 0.9609418710072836,
+"b3": null
+},
+{
+"platform": "omx",
+"direction": "goUpToPickPlace",
+"task": "pick_place_object_200g",
+"split": "train",
+"payloadG": 200,
+"b1": 701.8353437065924,
+"b4": 0.9673980275789896,
+"b3": null
+},
+{
+"platform": "omx",
+"direction": "goUpToPickPlace",
+"task": "pick_place_object_200g",
+"split": "validation",
+"payloadG": 200,
+"b1": 3202.2058448892703,
+"b4": 0.9666080276171366,
+"b3": null
+},
+{
+"platform": "omx",
+"direction": "goUpToPickPlace",
+"task": "pick_place_object_300g",
+"split": "test",
+"payloadG": 300,
+"b1": 492.08654281905325,
+"b4": 0.9913410941759745,
+"b3": null
+},
+{
+"platform": "omx",
+"direction": "goUpToPickPlace",
+"task": "pick_place_object_300g",
+"split": "train",
+"payloadG": 300,
+"b1": 753.9056651508885,
+"b4": 0.9682253201802572,
+"b3": null
+},
+{
+"platform": "omx",
+"direction": "goUpToPickPlace",
+"task": "pick_place_object_300g",
+"split": "train",
+"payloadG": 300,
+"b1": 2410.0435576199275,
+"b4": 0.959480881690979,
+"b3": null
+},
+{
+"platform": "omx",
+"direction": "goUpToPickPlace",
+"task": "pick_place_object_300g",
+"split": "train",
+"payloadG": 300,
+"b1": 2587.0483551336224,
+"b4": 0.9571311871210734,
+"b3": null
+},
+{
+"platform": "omx",
+"direction": "goUpToPickPlace",
+"task": "pick_place_object_300g",
+"split": "train",
+"payloadG": 300,
+"b1": 6165.0308637926655,
+"b4": 0.9622335036595663,
+"b3": null
+},
+{
+"platform": "omx",
+"direction": "goUpToPickPlace",
+"task": "pick_place_object_300g",
+"split": "train",
+"payloadG": 300,
+"b1": 1707.5806006273415,
+"b4": 0.9735812147458395,
+"b3": null
+},
+{
+"platform": "omx",
+"direction": "goUpToPickPlace",
+"task": "pick_place_object_300g",
+"split": "train",
+"payloadG": 300,
+"b1": 2586.3458608030705,
+"b4": 0.973747730255127,
+"b3": null
+},
+{
+"platform": "omx",
+"direction": "goUpToPickPlace",
+"task": "pick_place_object_300g",
+"split": "train",
+"payloadG": 300,
+"b1": 5329.374212994212,
+"b4": 0.957745889822642,
+"b3": null
+},
+{
+"platform": "omx",
+"direction": "goUpToPickPlace",
+"task": "pick_place_object_300g",
+"split": "train",
+"payloadG": 300,
+"b1": 812.5096838845475,
+"b4": 0.9692530035972595,
+"b3": null
+},
+{
+"platform": "omx",
+"direction": "goUpToPickPlace",
+"task": "pick_place_object_300g",
+"split": "validation",
+"payloadG": 300,
+"b1": 2059.406084317934,
+"b4": 0.9672585924466451,
+"b3": null
+},
+{
+"platform": "omx",
+"direction": "goUpToPickPlace",
+"task": "pick_place_object_400g",
+"split": "test",
+"payloadG": 400,
+"b1": 1276.5002396066984,
+"b4": 0.9633184274037679,
+"b3": null
+},
+{
+"platform": "omx",
+"direction": "goUpToPickPlace",
+"task": "pick_place_object_400g",
+"split": "train",
+"payloadG": 400,
+"b1": 7331.215255350699,
+"b4": 0.9664003054300944,
+"b3": null
+},
+{
+"platform": "omx",
+"direction": "goUpToPickPlace",
+"task": "pick_place_object_400g",
+"split": "train",
+"payloadG": 400,
+"b1": 6371.658383787996,
+"b4": 0.9646630684534708,
+"b3": null
+},
+{
+"platform": "omx",
+"direction": "goUpToPickPlace",
+"task": "pick_place_object_400g",
+"split": "train",
+"payloadG": 400,
+"b1": 1194.09668315144,
+"b4": 0.9524397452672323,
+"b3": null
+},
+{
+"platform": "omx",
+"direction": "goUpToPickPlace",
+"task": "pick_place_object_400g",
+"split": "train",
+"payloadG": 400,
+"b1": 1515.1811460548108,
+"b4": 0.964500347773234,
+"b3": null
+},
+{
+"platform": "omx",
+"direction": "goUpToPickPlace",
+"task": "pick_place_object_400g",
+"split": "train",
+"payloadG": 400,
+"b1": 3071.705786296401,
+"b4": 0.9632453918457031,
+"b3": null
+},
+{
+"platform": "omx",
+"direction": "goUpToPickPlace",
+"task": "pick_place_object_400g",
+"split": "train",
+"payloadG": 400,
+"b1": 988.2975816799697,
+"b4": 0.9453194936116537,
+"b3": null
+},
+{
+"platform": "omx",
+"direction": "goUpToPickPlace",
+"task": "pick_place_object_400g",
+"split": "train",
+"payloadG": 400,
+"b1": 5755.064801730574,
+"b4": 0.9429496725400289,
+"b3": null
+},
+{
+"platform": "omx",
+"direction": "goUpToPickPlace",
+"task": "pick_place_object_400g",
+"split": "train",
+"payloadG": 400,
+"b1": 6958.675315503018,
+"b4": 0.9648874998092651,
+"b3": null
+},
+{
+"platform": "omx",
+"direction": "goUpToPickPlace",
+"task": "pick_place_object_400g",
+"split": "validation",
+"payloadG": 400,
+"b1": 2535.4843546245656,
+"b4": 0.9747736851374308,
+"b3": null
+},
+{
+"platform": "omx",
+"direction": "goUpToPickPlace",
+"task": "pick_place_object_500g",
+"split": "test",
+"payloadG": 500,
+"b1": 15257.298969244037,
+"b4": 0.9654326240221659,
+"b3": null
+},
+{
+"platform": "omx",
+"direction": "goUpToPickPlace",
+"task": "pick_place_object_500g",
+"split": "train",
+"payloadG": 500,
+"b1": 11001.628179580835,
+"b4": 0.9727200468381246,
+"b3": null
+},
+{
+"platform": "omx",
+"direction": "goUpToPickPlace",
+"task": "pick_place_object_500g",
+"split": "train",
+"payloadG": 500,
+"b1": 14288.260270720011,
+"b4": 0.960475484530131,
+"b3": null
+},
+{
+"platform": "omx",
+"direction": "goUpToPickPlace",
+"task": "pick_place_object_500g",
+"split": "train",
+"payloadG": 500,
+"b1": 13171.542925696454,
+"b4": 0.9574421842892965,
+"b3": null
+},
+{
+"platform": "omx",
+"direction": "goUpToPickPlace",
+"task": "pick_place_object_500g",
+"split": "train",
+"payloadG": 500,
+"b1": 26350.062041358906,
+"b4": 0.9531793196996053,
+"b3": null
+},
+{
+"platform": "omx",
+"direction": "goUpToPickPlace",
+"task": "pick_place_object_500g",
+"split": "train",
+"payloadG": 500,
+"b1": 11507.702761915074,
+"b4": 0.9608983198801676,
+"b3": null
+},
+{
+"platform": "omx",
+"direction": "goUpToPickPlace",
+"task": "pick_place_object_500g",
+"split": "train",
+"payloadG": 500,
+"b1": 15529.939837885548,
+"b4": 0.9888457655906677,
+"b3": null
+},
+{
+"platform": "omx",
+"direction": "goUpToPickPlace",
+"task": "pick_place_object_500g",
+"split": "train",
+"payloadG": 500,
+"b1": 19960.769544338196,
+"b4": 0.9841891725858053,
+"b3": null
+},
+{
+"platform": "omx",
+"direction": "goUpToPickPlace",
+"task": "pick_place_object_500g",
+"split": "train",
+"payloadG": 500,
+"b1": 15451.336279072093,
+"b4": 0.9559595386187235,
+"b3": null
+},
+{
+"platform": "omx",
+"direction": "goUpToPickPlace",
+"task": "pick_place_object_500g",
+"split": "validation",
+"payloadG": 500,
+"b1": 16320.68367911622,
+"b4": 0.9678175648053488,
+"b3": null
+},
+{
+"platform": "omx",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still_no_force",
+"split": "test",
+"payloadG": 0,
+"b1": 227.6415420107811,
+"b4": 0.1136352854470412,
+"b3": 4.10337219974283
+},
+{
+"platform": "omx",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still_no_force",
+"split": "train",
+"payloadG": 0,
+"b1": 396.3064645966802,
+"b4": 0.08490189659642056,
+"b3": -0.07482107076509101
+},
+{
+"platform": "omx",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still_no_force",
+"split": "train",
+"payloadG": 0,
+"b1": 280.30551494021523,
+"b4": 0.07112134527415037,
+"b3": -0.09856846340864256
+},
+{
+"platform": "omx",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still_no_force",
+"split": "train",
+"payloadG": 0,
+"b1": 118.83011140755208,
+"b4": 0.0003167247159581166,
+"b3": 3.5812702800990905
+},
+{
+"platform": "omx",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still_no_force",
+"split": "train",
+"payloadG": 0,
+"b1": 236.2564076226895,
+"b4": 0.013057585631031543,
+"b3": 0.6935840850043011
+},
+{
+"platform": "omx",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still_no_force",
+"split": "train",
+"payloadG": 0,
+"b1": 376.4822269416979,
+"b4": 0.019106711552012712,
+"b3": 5.529776623816328
+},
+{
+"platform": "omx",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still_no_force",
+"split": "train",
+"payloadG": 0,
+"b1": 211.8622870116208,
+"b4": 0.02775256988631251,
+"b3": -0.08499982602806487
+},
+{
+"platform": "omx",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still_no_force",
+"split": "train",
+"payloadG": 0,
+"b1": 118.2212303384611,
+"b4": 0.10722061526030302,
+"b3": 0.1611610167859846
+},
+{
+"platform": "omx",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still_no_force",
+"split": "train",
+"payloadG": 0,
+"b1": 213.8482373848172,
+"b4": 0.0028788546997020603,
+"b3": -0.07416081055897614
+},
+{
+"platform": "omx",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still_no_force",
+"split": "validation",
+"payloadG": 0,
+"b1": 279.5322419623339,
+"b4": 0.0032913120230659842,
+"b3": -0.06237310193526822
+},
+{
+"platform": "omx",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still_with_object_200g",
+"split": "test",
+"payloadG": 200,
+"b1": 695.5084587028871,
+"b4": 0.28469665348529816,
+"b3": -0.4320246171346032
+},
+{
+"platform": "omx",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still_with_object_200g",
+"split": "train",
+"payloadG": 200,
+"b1": 722.9761300139629,
+"b4": 0.1308197776476542,
+"b3": 7.206061278317351
+},
+{
+"platform": "omx",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still_with_object_200g",
+"split": "train",
+"payloadG": 200,
+"b1": 730.6301887930983,
+"b4": 0.13925514680643877,
+"b3": 1.664288037714118
+},
+{
+"platform": "omx",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still_with_object_200g",
+"split": "train",
+"payloadG": 200,
+"b1": 898.3409722016021,
+"b4": 0.17111018548409143,
+"b3": -0.6516932158656568
+},
+{
+"platform": "omx",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still_with_object_200g",
+"split": "train",
+"payloadG": 200,
+"b1": 983.5602488172872,
+"b4": 0.19309153904517493,
+"b3": -0.7202902358291564
+},
+{
+"platform": "omx",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still_with_object_200g",
+"split": "train",
+"payloadG": 200,
+"b1": 631.0218820528892,
+"b4": 0.26008757452170056,
+"b3": -0.4349608151597414
+},
+{
+"platform": "omx",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still_with_object_200g",
+"split": "train",
+"payloadG": 200,
+"b1": 630.5859484854487,
+"b4": 0.19380114475886026,
+"b3": -0.4108927440930188
+},
+{
+"platform": "omx",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still_with_object_200g",
+"split": "train",
+"payloadG": 200,
+"b1": 937.2206197614813,
+"b4": 0.2720174292723338,
+"b3": 8.339302081383385
+},
+{
+"platform": "omx",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still_with_object_200g",
+"split": "train",
+"payloadG": 200,
+"b1": 987.0053207535113,
+"b4": 0.3131495863199234,
+"b3": 18.005543671895907
+},
+{
+"platform": "omx",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still_with_object_200g",
+"split": "validation",
+"payloadG": 200,
+"b1": 895.9467707223092,
+"b4": 0.22574175894260406,
+"b3": -0.6220344846472239
+},
+{
+"platform": "omx",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still_with_object_300g",
+"split": "test",
+"payloadG": 300,
+"b1": 990.6792919212345,
+"b4": 0.24050814161698023,
+"b3": -0.007134252897602759
+},
+{
+"platform": "omx",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still_with_object_300g",
+"split": "train",
+"payloadG": 300,
+"b1": 727.69761459399,
+"b4": 0.15812607357899347,
+"b3": 9.126322180628296
+},
+{
+"platform": "omx",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still_with_object_300g",
+"split": "train",
+"payloadG": 300,
+"b1": 1355.5196907314353,
+"b4": 0.246869886914889,
+"b3": 8.707065628372668
+},
+{
+"platform": "omx",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still_with_object_300g",
+"split": "train",
+"payloadG": 300,
+"b1": 1135.7746069478465,
+"b4": 0.2743024428685506,
+"b3": 6.500274228260017
+},
+{
+"platform": "omx",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still_with_object_300g",
+"split": "train",
+"payloadG": 300,
+"b1": 1672.8041969619624,
+"b4": 0.34164637078841525,
+"b3": 28.499986033698338
+},
+{
+"platform": "omx",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still_with_object_300g",
+"split": "train",
+"payloadG": 300,
+"b1": 1600.3508426940848,
+"b4": 0.1364533913632234,
+"b3": 17.195497886225755
+},
+{
+"platform": "omx",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still_with_object_300g",
+"split": "train",
+"payloadG": 300,
+"b1": 1346.2460227851523,
+"b4": 0.25843338171641034,
+"b3": 13.447291548307488
+},
+{
+"platform": "omx",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still_with_object_300g",
+"split": "train",
+"payloadG": 300,
+"b1": 1288.190632500324,
+"b4": 0.21404404689868292,
+"b3": 1.4150178573882466
+},
+{
+"platform": "omx",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still_with_object_300g",
+"split": "train",
+"payloadG": 300,
+"b1": 1124.5883749480433,
+"b4": 0.38195336361726123,
+"b3": 1.085138099434283
+},
+{
+"platform": "omx",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still_with_object_300g",
+"split": "validation",
+"payloadG": 300,
+"b1": 1372.4815200389057,
+"b4": 0.16043424357970557,
+"b3": 1.275212869039555
+},
+{
+"platform": "omx",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still_with_object_400g",
+"split": "test",
+"payloadG": 400,
+"b1": 1482.0825674699088,
+"b4": 0.41250645617643994,
+"b3": 6.395780973672363
+},
+{
+"platform": "omx",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still_with_object_400g",
+"split": "train",
+"payloadG": 400,
+"b1": 1924.7809367469808,
+"b4": 0.25900303572416306,
+"b3": 178.8093359537012
+},
+{
+"platform": "omx",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still_with_object_400g",
+"split": "train",
+"payloadG": 400,
+"b1": 1435.1329881932274,
+"b4": 0.3349481870730718,
+"b3": -0.3163986202342788
+},
+{
+"platform": "omx",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still_with_object_400g",
+"split": "train",
+"payloadG": 400,
+"b1": 1142.2865439749976,
+"b4": 0.35974258184432983,
+"b3": 1.3480820705935175
+},
+{
+"platform": "omx",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still_with_object_400g",
+"split": "train",
+"payloadG": 400,
+"b1": 1689.4634349469982,
+"b4": 0.48454094926516217,
+"b3": 6.261211043907846
+},
+{
+"platform": "omx",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still_with_object_400g",
+"split": "train",
+"payloadG": 400,
+"b1": 1359.7135502656313,
+"b4": 0.36523931721846264,
+"b3": 1.6171136459963593
+},
+{
+"platform": "omx",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still_with_object_400g",
+"split": "train",
+"payloadG": 400,
+"b1": 966.0307111132946,
+"b4": 0.47293099761009216,
+"b3": 8.575768757242344
+},
+{
+"platform": "omx",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still_with_object_400g",
+"split": "train",
+"payloadG": 400,
+"b1": 1388.5931721914153,
+"b4": 0.44484755396842957,
+"b3": 27.950169932841987
+},
+{
+"platform": "omx",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still_with_object_400g",
+"split": "train",
+"payloadG": 400,
+"b1": 1505.8633181552448,
+"b4": 0.3191660096247991,
+"b3": 21.514928430260174
+},
+{
+"platform": "omx",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still_with_object_400g",
+"split": "validation",
+"payloadG": 400,
+"b1": 1680.3296697204582,
+"b4": 0.38778577744960785,
+"b3": 65.13033643545462
+},
+{
+"platform": "so101",
+"direction": "goUpToPickPlace",
+"task": "pick_and_place",
+"split": "test",
+"payloadG": 200,
+"b1": 213.90597035838792,
+"b4": 0.861718992392222,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "goUpToPickPlace",
+"task": "pick_and_place",
+"split": "train",
+"payloadG": 200,
+"b1": 248.9976741178362,
+"b4": 0.9590732852617899,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "goUpToPickPlace",
+"task": "pick_and_place",
+"split": "train",
+"payloadG": 200,
+"b1": 256.582094048591,
+"b4": 0.9405856927235922,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "goUpToPickPlace",
+"task": "pick_and_place",
+"split": "train",
+"payloadG": 200,
+"b1": 228.22909997561177,
+"b4": 0.9258321722348531,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "goUpToPickPlace",
+"task": "pick_and_place",
+"split": "train",
+"payloadG": 200,
+"b1": 205.41512183151463,
+"b4": 0.9141004880269369,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "goUpToPickPlace",
+"task": "pick_and_place",
+"split": "train",
+"payloadG": 200,
+"b1": 219.7220919633116,
+"b4": 0.9459450443585714,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "goUpToPickPlace",
+"task": "pick_and_place",
+"split": "train",
+"payloadG": 200,
+"b1": 167.2375128129089,
+"b4": 0.8746733864148458,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "goUpToPickPlace",
+"task": "pick_and_place",
+"split": "train",
+"payloadG": 200,
+"b1": 185.17718488672784,
+"b4": 0.8528687357902527,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "goUpToPickPlace",
+"task": "pick_and_place",
+"split": "train",
+"payloadG": 200,
+"b1": 134.0164777660435,
+"b4": 0.8231208920478821,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "goUpToPickPlace",
+"task": "pick_and_place",
+"split": "validation",
+"payloadG": 200,
+"b1": 245.33153862310132,
+"b4": 0.8622093796730042,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "goUpToPickPlace",
+"task": "pick_and_place",
+"split": "test",
+"payloadG": 300,
+"b1": 188.20800024810254,
+"b4": 0.8859443267186483,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "goUpToPickPlace",
+"task": "pick_and_place",
+"split": "train",
+"payloadG": 300,
+"b1": 280.1849491757068,
+"b4": 0.9073998332023621,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "goUpToPickPlace",
+"task": "pick_and_place",
+"split": "train",
+"payloadG": 300,
+"b1": 201.1542443802383,
+"b4": 0.8662964105606079,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "goUpToPickPlace",
+"task": "pick_and_place",
+"split": "train",
+"payloadG": 300,
+"b1": 262.061096787844,
+"b4": 0.9628342191378275,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "goUpToPickPlace",
+"task": "pick_and_place",
+"split": "train",
+"payloadG": 300,
+"b1": 199.54583519294007,
+"b4": 0.9222394824028015,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "goUpToPickPlace",
+"task": "pick_and_place",
+"split": "train",
+"payloadG": 300,
+"b1": 200.86972876498777,
+"b4": 0.9584716558456421,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "goUpToPickPlace",
+"task": "pick_and_place",
+"split": "train",
+"payloadG": 300,
+"b1": 270.0619647259976,
+"b4": 0.9180005788803101,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "goUpToPickPlace",
+"task": "pick_and_place",
+"split": "train",
+"payloadG": 300,
+"b1": 240.06061955997106,
+"b4": 0.8535131017367045,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "goUpToPickPlace",
+"task": "pick_and_place",
+"split": "train",
+"payloadG": 300,
+"b1": 177.30814284843757,
+"b4": 0.9548907478650411,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "goUpToPickPlace",
+"task": "pick_and_place",
+"split": "validation",
+"payloadG": 300,
+"b1": 228.56764856503062,
+"b4": 0.915360709031423,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "goUpToPickPlace",
+"task": "pick_and_place",
+"split": "test",
+"payloadG": 400,
+"b1": 218.45872797336372,
+"b4": 0.9600791136423746,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "goUpToPickPlace",
+"task": "pick_and_place",
+"split": "train",
+"payloadG": 400,
+"b1": 256.26844619944285,
+"b4": 0.8768994410832723,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "goUpToPickPlace",
+"task": "pick_and_place",
+"split": "train",
+"payloadG": 400,
+"b1": 172.54742756272228,
+"b4": 0.9743221998214722,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "goUpToPickPlace",
+"task": "pick_and_place",
+"split": "train",
+"payloadG": 400,
+"b1": 164.33629624418836,
+"b4": 0.9421495397885641,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "goUpToPickPlace",
+"task": "pick_and_place",
+"split": "train",
+"payloadG": 400,
+"b1": 193.19328625877012,
+"b4": 0.9553812543551127,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "goUpToPickPlace",
+"task": "pick_and_place",
+"split": "train",
+"payloadG": 400,
+"b1": 271.4257265177329,
+"b4": 0.9441771507263184,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "goUpToPickPlace",
+"task": "pick_and_place",
+"split": "train",
+"payloadG": 400,
+"b1": 186.6915075324263,
+"b4": 0.934334933757782,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "goUpToPickPlace",
+"task": "pick_and_place",
+"split": "train",
+"payloadG": 400,
+"b1": 292.73565838453305,
+"b4": 0.9594989816347758,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "goUpToPickPlace",
+"task": "pick_and_place",
+"split": "train",
+"payloadG": 400,
+"b1": 239.34916304699814,
+"b4": 0.8830543557802836,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "goUpToPickPlace",
+"task": "pick_and_place",
+"split": "validation",
+"payloadG": 400,
+"b1": 327.5617598315335,
+"b4": 0.9614649613698324,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "goUpToPickPlace",
+"task": "pick_and_place",
+"split": "test",
+"payloadG": 500,
+"b1": 294.2482197483899,
+"b4": 0.9687607884407043,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "goUpToPickPlace",
+"task": "pick_and_place",
+"split": "train",
+"payloadG": 500,
+"b1": 297.4107295961881,
+"b4": 0.9714085857073466,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "goUpToPickPlace",
+"task": "pick_and_place",
+"split": "train",
+"payloadG": 500,
+"b1": 264.7673179355643,
+"b4": 0.9684932231903076,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "goUpToPickPlace",
+"task": "pick_and_place",
+"split": "train",
+"payloadG": 500,
+"b1": 386.86524253785694,
+"b4": 0.9285215735435486,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "goUpToPickPlace",
+"task": "pick_and_place",
+"split": "train",
+"payloadG": 500,
+"b1": 331.86816324820404,
+"b4": 0.9676933487256368,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "goUpToPickPlace",
+"task": "pick_and_place",
+"split": "train",
+"payloadG": 500,
+"b1": 334.5648778683222,
+"b4": 0.941273053487142,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "goUpToPickPlace",
+"task": "pick_and_place",
+"split": "train",
+"payloadG": 500,
+"b1": 263.25434937650215,
+"b4": 0.9643652439117432,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "goUpToPickPlace",
+"task": "pick_and_place",
+"split": "train",
+"payloadG": 500,
+"b1": 455.50628618160124,
+"b4": 0.9624635378519694,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "goUpToPickPlace",
+"task": "pick_and_place",
+"split": "train",
+"payloadG": 500,
+"b1": 265.4838923737087,
+"b4": 0.9622739950815836,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "goUpToPickPlace",
+"task": "pick_and_place",
+"split": "validation",
+"payloadG": 500,
+"b1": 193.4491275396873,
+"b4": 0.966201663017273,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "goUpToPickPlace",
+"task": "pick_and_place",
+"split": "test",
+"payloadG": 0,
+"b1": 266.07847593557705,
+"b4": 0.8427056670188904,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "goUpToPickPlace",
+"task": "pick_and_place",
+"split": "train",
+"payloadG": 0,
+"b1": 517.5748710489771,
+"b4": 0.7988938887914022,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "goUpToPickPlace",
+"task": "pick_and_place",
+"split": "train",
+"payloadG": 0,
+"b1": 317.77676935001114,
+"b4": 0.8906368215878805,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "goUpToPickPlace",
+"task": "pick_and_place",
+"split": "train",
+"payloadG": 0,
+"b1": 205.39664222773516,
+"b4": 0.8919250766436259,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "goUpToPickPlace",
+"task": "pick_and_place",
+"split": "train",
+"payloadG": 0,
+"b1": 140.67042327400512,
+"b4": 0.7959070404370626,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "goUpToPickPlace",
+"task": "pick_and_place",
+"split": "train",
+"payloadG": 0,
+"b1": 249.49869829258319,
+"b4": 0.7397754987080892,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "goUpToPickPlace",
+"task": "pick_and_place",
+"split": "train",
+"payloadG": 0,
+"b1": 191.11379545295722,
+"b4": 0.931060791015625,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "goUpToPickPlace",
+"task": "pick_and_place",
+"split": "train",
+"payloadG": 0,
+"b1": 258.231051824453,
+"b4": 0.6251272757848104,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "goUpToPickPlace",
+"task": "pick_and_place",
+"split": "train",
+"payloadG": 0,
+"b1": 220.55225715266715,
+"b4": 0.5875204801559448,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "goUpToPickPlace",
+"task": "pick_and_place",
+"split": "validation",
+"payloadG": 0,
+"b1": 168.44802678104477,
+"b4": 0.794236441453298,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still",
+"split": "test",
+"payloadG": 200,
+"b1": 45.62073457107177,
+"b4": 0.9999436934789022,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still",
+"split": "train",
+"payloadG": 200,
+"b1": 47.70858675544621,
+"b4": 0.99996018409729,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still",
+"split": "train",
+"payloadG": 200,
+"b1": 44.568039394957474,
+"b4": 0.9999118645985922,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still",
+"split": "train",
+"payloadG": 200,
+"b1": 46.59032156537246,
+"b4": 0.9989999731381735,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still",
+"split": "train",
+"payloadG": 200,
+"b1": 30.669072940616875,
+"b4": 0.9968176285425822,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still",
+"split": "train",
+"payloadG": 200,
+"b1": 41.35529703447021,
+"b4": 0.9945504466692606,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still",
+"split": "train",
+"payloadG": 200,
+"b1": 38.03615461201026,
+"b4": 0.9620824257532755,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still",
+"split": "train",
+"payloadG": 200,
+"b1": 55.265023907971596,
+"b4": 0.9945422808329264,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still",
+"split": "train",
+"payloadG": 200,
+"b1": 46.144991930155506,
+"b4": 0.8198351661364237,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still",
+"split": "validation",
+"payloadG": 200,
+"b1": 48.05969248072574,
+"b4": 0.8830520113309225,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still",
+"split": "test",
+"payloadG": 300,
+"b1": 72.57605882843077,
+"b4": 0.7192969918251038,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still",
+"split": "train",
+"payloadG": 300,
+"b1": 86.70206152593298,
+"b4": 0.9758064150810242,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still",
+"split": "train",
+"payloadG": 300,
+"b1": 62.37161397957633,
+"b4": 0.850025455156962,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still",
+"split": "train",
+"payloadG": 300,
+"b1": 69.95777926791423,
+"b4": 0.8761794169743856,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still",
+"split": "train",
+"payloadG": 300,
+"b1": 82.17352393095598,
+"b4": 0.7451775968074799,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still",
+"split": "train",
+"payloadG": 300,
+"b1": 78.29073323428747,
+"b4": 0.7798841893672943,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still",
+"split": "train",
+"payloadG": 300,
+"b1": 67.35320108435897,
+"b4": 0.8911702036857605,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still",
+"split": "train",
+"payloadG": 300,
+"b1": 62.474961215280665,
+"b4": 0.938869039217631,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still",
+"split": "train",
+"payloadG": 300,
+"b1": 71.21733672974058,
+"b4": 0.8490485151608785,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still",
+"split": "validation",
+"payloadG": 300,
+"b1": 68.91832264803189,
+"b4": 0.8660189906756083,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still",
+"split": "test",
+"payloadG": 400,
+"b1": 124.75252746284205,
+"b4": 0.4173197178170085,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still",
+"split": "train",
+"payloadG": 400,
+"b1": 63.83248373157415,
+"b4": 0.6326219836870829,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still",
+"split": "train",
+"payloadG": 400,
+"b1": 79.22816668957434,
+"b4": 0.3669345735882719,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still",
+"split": "train",
+"payloadG": 400,
+"b1": 87.76302691675191,
+"b4": 0.4866509046405554,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still",
+"split": "train",
+"payloadG": 400,
+"b1": 83.39123273008032,
+"b4": 0.47777364651362103,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still",
+"split": "train",
+"payloadG": 400,
+"b1": 58.80354664379988,
+"b4": 0.5545838276545206,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still",
+"split": "train",
+"payloadG": 400,
+"b1": 88.83962488179307,
+"b4": 0.4484383563200633,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still",
+"split": "train",
+"payloadG": 400,
+"b1": 85.52633598667914,
+"b4": 0.4290749629338582,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still",
+"split": "train",
+"payloadG": 400,
+"b1": 121.2926497233169,
+"b4": 0.5434442758560181,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still",
+"split": "validation",
+"payloadG": 400,
+"b1": 88.92262660569187,
+"b4": 0.5712602126101652,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still",
+"split": "test",
+"payloadG": 500,
+"b1": 93.12287464353174,
+"b4": 0.6924505233764648,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still",
+"split": "train",
+"payloadG": 500,
+"b1": 128.0359037935859,
+"b4": 0.6768556634585062,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still",
+"split": "train",
+"payloadG": 500,
+"b1": 171.7567755213512,
+"b4": 0.5817047854264578,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still",
+"split": "train",
+"payloadG": 500,
+"b1": 161.15463992774514,
+"b4": 0.7782435218493143,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still",
+"split": "train",
+"payloadG": 500,
+"b1": 105.59481423500517,
+"b4": 0.8365523815155029,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still",
+"split": "train",
+"payloadG": 500,
+"b1": 138.22470167109287,
+"b4": 0.6831151147683462,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still",
+"split": "train",
+"payloadG": 500,
+"b1": 143.62014913576144,
+"b4": 0.6257230341434479,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still",
+"split": "train",
+"payloadG": 500,
+"b1": 150.45587045617026,
+"b4": 0.6645004451274872,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still",
+"split": "train",
+"payloadG": 500,
+"b1": 88.10723629994465,
+"b4": 0.6343531310558319,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still",
+"split": "validation",
+"payloadG": 500,
+"b1": 126.26918698573652,
+"b4": 0.6297213832537333,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still",
+"split": "test",
+"payloadG": 0,
+"b1": 57.95394981836674,
+"b4": 0.0007025241696586212,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still",
+"split": "train",
+"payloadG": 0,
+"b1": 58.61204657972614,
+"b4": 0.000935079655998076,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still",
+"split": "train",
+"payloadG": 0,
+"b1": 58.33283691496558,
+"b4": 0.08729389309883118,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still",
+"split": "train",
+"payloadG": 0,
+"b1": 56.96903740790838,
+"b4": 0.03483894964059194,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still",
+"split": "train",
+"payloadG": 0,
+"b1": 58.8463535006012,
+"b4": 0.00041217261605197564,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still",
+"split": "train",
+"payloadG": 0,
+"b1": 56.50440705148011,
+"b4": 0.001072047627530992,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still",
+"split": "train",
+"payloadG": 0,
+"b1": 58.42625630223532,
+"b4": 0.0008252370462287217,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still",
+"split": "train",
+"payloadG": 0,
+"b1": 60.978648815838966,
+"b4": 0.007717518291125695,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still",
+"split": "train",
+"payloadG": 0,
+"b1": 55.65477688579319,
+"b4": 0.00035166994833465043,
+"b3": null
+},
+{
+"platform": "so101",
+"direction": "pickPlaceToGoUp",
+"task": "go_up_and_stay_still",
+"split": "validation",
+"payloadG": 0,
+"b1": 59.39716146357722,
+"b4": 0.0010079862743926544,
+"b3": null
+}
+]
+}

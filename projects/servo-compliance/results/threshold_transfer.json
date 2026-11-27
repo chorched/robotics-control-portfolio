@@ -1,0 +1,177 @@
+{
+ "directions": [
+  {
+   "platform": "omx",
+   "direction": "goUpToPickPlace",
+   "b1": {
+    "auroc": 0.57,
+    "nPos": 40,
+    "nNeg": 10,
+    "sourceThreshold": {
+     "frr": 0.0,
+     "fa": 1.0
+    },
+    "recal": {
+     "R1_k1": 0.0,
+     "R1_k2": 0.0,
+     "R1_k4": 0.0,
+     "R1_k8": 0.0,
+     "R2_k1": 0.0,
+     "R2_k2": 0.0,
+     "R2_k4": 0.0,
+     "R2_k8": 0.0
+    }
+   },
+   "b4": {
+    "auroc": 1.0,
+    "nPos": 40,
+    "nNeg": 10,
+    "sourceThreshold": {
+     "frr": 1.0,
+     "fa": 0.0
+    },
+    "recal": {
+     "R1_k1": 0.098,
+     "R1_k2": 0.2065,
+     "R1_k4": 0.3655,
+     "R1_k8": 0.6035,
+     "R2_k1": 0.7135,
+     "R2_k2": 0.938,
+     "R2_k4": 1.0,
+     "R2_k8": 1.0
+    }
+   }
+  },
+  {
+   "platform": "omx",
+   "direction": "pickPlaceToGoUp",
+   "b1": {
+    "auroc": 1.0,
+    "nPos": 30,
+    "nNeg": 10,
+    "sourceThreshold": {
+     "frr": 0.0,
+     "fa": 0.2
+    },
+    "recal": {
+     "R1_k1": 0.1055,
+     "R1_k2": 0.1935,
+     "R1_k4": 0.3515,
+     "R1_k8": 0.626,
+     "R2_k1": 0.4985,
+     "R2_k2": 0.6895,
+     "R2_k4": 0.9165,
+     "R2_k8": 0.995
+    }
+   },
+   "b4": {
+    "auroc": 1.0,
+    "nPos": 30,
+    "nNeg": 10,
+    "sourceThreshold": {
+     "frr": 1.0,
+     "fa": 0.0
+    },
+    "recal": {
+     "R1_k1": 0.1025,
+     "R1_k2": 0.197,
+     "R1_k4": 0.343,
+     "R1_k8": 0.6025,
+     "R2_k1": 0.2015,
+     "R2_k2": 0.26,
+     "R2_k4": 0.47,
+     "R2_k8": 0.8045
+    }
+   }
+  },
+  {
+   "platform": "so101",
+   "direction": "goUpToPickPlace",
+   "b1": {
+    "auroc": 0.515,
+    "nPos": 40,
+    "nNeg": 10,
+    "sourceThreshold": {
+     "frr": 0.0,
+     "fa": 1.0
+    },
+    "recal": {
+     "R1_k1": 0.0,
+     "R1_k2": 0.0,
+     "R1_k4": 0.0,
+     "R1_k8": 0.003,
+     "R2_k1": 0.0,
+     "R2_k2": 0.0,
+     "R2_k4": 0.0,
+     "R2_k8": 0.0
+    }
+   },
+   "b4": {
+    "auroc": 0.905,
+    "nPos": 40,
+    "nNeg": 10,
+    "sourceThreshold": {
+     "frr": 1.0,
+     "fa": 0.0
+    },
+    "recal": {
+     "R1_k1": 0.0,
+     "R1_k2": 0.0,
+     "R1_k4": 0.0085,
+     "R1_k8": 0.2665,
+     "R2_k1": 0.0,
+     "R2_k2": 0.0,
+     "R2_k4": 0.0,
+     "R2_k8": 0.001
+    }
+   }
+  },
+  {
+   "platform": "so101",
+   "direction": "pickPlaceToGoUp",
+   "b1": {
+    "auroc": 0.7425,
+    "nPos": 40,
+    "nNeg": 10,
+    "sourceThreshold": {
+     "frr": 0.0,
+     "fa": 1.0
+    },
+    "recal": {
+     "R1_k1": 0.0,
+     "R1_k2": 0.0,
+     "R1_k4": 0.0,
+     "R1_k8": 0.0,
+     "R2_k1": 0.0,
+     "R2_k2": 0.0,
+     "R2_k4": 0.0,
+     "R2_k8": 0.0
+    }
+   },
+   "b4": {
+    "auroc": 1.0,
+    "nPos": 40,
+    "nNeg": 10,
+    "sourceThreshold": {
+     "frr": 0.9,
+     "fa": 0.0
+    },
+    "recal": {
+     "R1_k1": 0.093,
+     "R1_k2": 0.1835,
+     "R1_k4": 0.3475,
+     "R1_k8": 0.6085,
+     "R2_k1": 0.7255,
+     "R2_k2": 0.9075,
+     "R2_k4": 0.981,
+     "R2_k8": 1.0
+    }
+   }
+  }
+ ],
+ "gate": {
+  "rule": ">= 3 of 4 directions with pJoint >= 0.8 at some k <= 4 (b4)",
+  "passing": 2,
+  "result": "FAIL"
+ }
+}

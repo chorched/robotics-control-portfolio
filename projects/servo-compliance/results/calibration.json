@@ -1,0 +1,123 @@
+{
+ "params": {
+  "fitted": {
+   "kp": 14.0887,
+   "kv": 0.4701,
+   "frictionloss": 0.2844
+  },
+  "publicNew": {
+   "kp": 998.22,
+   "kv": 2.731,
+   "frictionloss": 0.052
+  },
+  "publicOldGains": {
+   "kp": 17.8,
+   "kv": 0.0,
+   "frictionloss": 0.052
+  }
+ },
+ "nrmse": {
+  "fitted": {
+   "train": {
+    "arm": 0.0611057592043414,
+    "perJoint": {
+     "shoulder_pan": 0.06423807950540465,
+     "shoulder_lift": 0.07624332421625693,
+     "elbow_flex": 0.0515087129057281,
+     "wrist_flex": 0.02933200683858186,
+     "wrist_roll": 0.08420667255573545,
+     "gripper": 0.04702758482128225
+    }
+   },
+   "validation": {
+    "arm": 0.0607382627953722,
+    "perJoint": {
+     "shoulder_pan": 0.06855414016753622,
+     "shoulder_lift": 0.08227350063770075,
+     "elbow_flex": 0.04681997708757189,
+     "wrist_flex": 0.02590501697474354,
+     "wrist_roll": 0.08013867910930858,
+     "gripper": 0.05227068559264053
+    }
+   },
+   "test": {
+    "arm": 0.08467777287021068,
+    "perJoint": {
+     "shoulder_pan": 0.06784009961451459,
+     "shoulder_lift": 0.10567666957859782,
+     "elbow_flex": 0.07131899804727167,
+     "wrist_flex": 0.022015711416361602,
+     "wrist_roll": 0.15653738569430767,
+     "gripper": 0.043576552965324714
+    }
+   }
+  },
+  "publicNew": {
+   "train": {
+    "arm": 0.105865320627784,
+    "perJoint": {
+     "shoulder_pan": 0.06364595602758408,
+     "shoulder_lift": 0.1664100723665662,
+     "elbow_flex": 0.12275022826737232,
+     "wrist_flex": 0.048504505328435976,
+     "wrist_roll": 0.12801584114896142,
+     "gripper": 0.10692944862868199
+    }
+   },
+   "validation": {
+    "arm": 0.12362859218219055,
+    "perJoint": {
+     "shoulder_pan": 0.06710185075879767,
+     "shoulder_lift": 0.2009434147092375,
+     "elbow_flex": 0.14442626146166115,
+     "wrist_flex": 0.048891817759845836,
+     "wrist_roll": 0.1567796162214106,
+     "gripper": 0.14208293105307276
+    }
+   },
+   "test": {
+    "arm": 0.1643380570129271,
+    "perJoint": {
+     "shoulder_pan": 0.07096821353856951,
+     "shoulder_lift": 0.20712317243320633,
+     "elbow_flex": 0.20176307659640966,
+     "wrist_flex": 0.04900444227710069,
+     "wrist_roll": 0.2928313802193494,
+     "gripper": 0.1458104285291678
+    }
+   }
+  }
+ },
+ "torqueProxy": {
+  "shoulder_pan": {
+   "slopeNmPerCount": -0.005460515387433645,
+   "interceptNm": 0.026255053604119304,
+   "r2": 0.6937354535182716
+  },
+  "shoulder_lift": {
+   "slopeNmPerCount": -0.003506695689090963,
+   "interceptNm": -0.220163992816496,
+   "r2": 0.7894147213954597
+  },
+  "elbow_flex": {
+   "slopeNmPerCount": -0.0033098922235764404,
+   "interceptNm": -0.18277993926637298,
+   "r2": 0.7418585749258881
+  },
+  "wrist_flex": {
+   "slopeNmPerCount": -0.004483479867723849,
+   "interceptNm": 0.0379641521113657,
+   "r2": 0.825416870710745
+  },
+  "wrist_roll": {
+   "slopeNmPerCount": -0.0032064472801689183,
+   "interceptNm": 0.008684449114031927,
+   "r2": 0.562515775616272
+  },
+  "gripper": {
+   "slopeNmPerCount": -0.003187086069994611,
+   "interceptNm": -0.0159173618284085,
+   "r2": 0.6498494009716267
+  }
+ }
+}
